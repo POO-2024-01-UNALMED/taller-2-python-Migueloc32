@@ -1,5 +1,5 @@
 class Asiento:
-    def __init__(self):
+    def __init__(self, color, precio, registro):
         self.color = ""
         self.precio = 0
         self.registro = 0
@@ -11,7 +11,7 @@ class Asiento:
 
 
 class Motor:
-    def __init__(self):
+    def __init__(self, numero_cilindros, tipo, registro):
         self.numero_cilindros = 0
         self.tipo = ""
         self.registro = 0
@@ -28,7 +28,7 @@ class Motor:
 class Auto:
     cantidad_creados = 0
 
-    def __init__(self):
+    def __init__(self, modelo, precio, asientos, marca, motor, registro):
         self.modelo = ""
         self.precio = 0
         self.asientos = []
